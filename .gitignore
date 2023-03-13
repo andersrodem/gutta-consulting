@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-!/node_modules/next/node_modules/postcss/package.json
+!*/node_modules/next/node_modules/postcss/package.json
 
 # testing
 /coverage
