@@ -2,13 +2,13 @@
 
 # dependencies
 /node_modules
-!/node_modules/next/
-/node_modules/next/*
-!/node_modules/next/node_modules
-/node_modules/next/node_modules/*
-!/node_modules/next/node_modules/postcss
-/node_modules/next/node_modules/postcss/*
-!/node_modules/next/node_modules/postcss/package.json
+#!/node_modules/next
+#/node_modules/next/*
+#!/node_modules/next/node_modules
+#/node_modules/next/node_modules/*
+#!/node_modules/next/node_modules/postcss
+#/node_modules/next/node_modules/postcss/*
+#!/node_modules/next/node_modules/postcss/package.json
 /.pnp
 .pnp.js
 
