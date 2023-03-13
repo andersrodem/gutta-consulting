@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
 
+// Her er gutta STOOORE vilkar
 export default function Contact() {
   return (
     <div className="text-white bg-black">
