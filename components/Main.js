@@ -6,15 +6,14 @@ export default function Main() {
     <section class="text-black body-font lg:pt-20">
       <div class="container px-5 pt-32 mx-auto lg:px-4 lg:py-4">
         <div class="flex flex-col w-full mb-2 text-left md:text-center ">
-          
           <h1 class="mb-2 text-6xl font-bold tracking-tighter text-white lg:text-8xl md:text-7xl">
             <span>Gutta Consulting</span>
             <br class="hidden lg:block"></br>
-            
           </h1>
-          <p className="text-3xl text-white pt-8 pb-5">GaaS - Guttastemning as a Service</p>
+          <p className="text-3xl text-white pt-8 pb-5">
+            GaaS - Guttastemning as a Service
+          </p>
           <br></br>
-          
         </div>
       </div>
       <div class="container flex flex-col items-center justify-center py-8 mx-auto rounded-lg md:p-1 p-3">
@@ -27,7 +26,7 @@ export default function Main() {
       <section class="text-gray-600 body-font">
         <section class="text-gray-600 body-font">
           <div class="container px-5 py-10 mx-auto">
-            <div class="flex flex-wrap -m-4 text-center">
+            <div class="flex flex-wrap -m-4 text-center pb-10">
               <div class="p-4 sm:w-1/3 w-1/2">
                 <h2 class="title-font font-medium sm:text-5xl text-3xl text-white">
                   <CountUp end={9827} redraw={true}>
@@ -35,7 +34,6 @@ export default function Main() {
                       <VisibilitySensor onChange={start} delayedCall>
                         <span ref={countUpRef} />
                       </VisibilitySensor>
-                      
                     )}
                   </CountUp>
                 </h2>
@@ -80,7 +78,11 @@ export default function Main() {
             </div>
           </div>
         </section>
+        <h1 class="text-5xl font-semibold title-font text-white mx-auto text-center px-6 pt-10">
+            I Gutta Consulting setter vi deg i fokus
+          </h1>
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
+         
           <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <img
               alt="feature"
@@ -95,7 +97,8 @@ export default function Main() {
                   Non-brofit
                 </h2>
                 <p class="leading-relaxed text-lg">
-                  No brother left behind. I gutta consulting er alle med, alltid.
+                  No brother left behind. I gutta consulting er alle med,
+                  alltid.
                 </p>
               </div>
             </div>
@@ -129,7 +132,6 @@ export default function Main() {
                 </p>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
@@ -140,7 +142,7 @@ export default function Main() {
               Guttene
             </h2>
             <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-             Her er alle og ingen sjef
+              Her er alle og ingen sjef
             </p>
             <div class="flex mt-6 justify-center">
               <div class="w-16 h-1 rounded-full bg-white inline-flex"></div>
