@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
 
+//comment
+
 export default function Contact() {
   return (
     <div className="bg-black  text-white">
@@ -14,6 +16,8 @@ export default function Contact() {
           url: "https://nine4-1.vercel.app/contact",
         }}
       />
+
+      
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
