@@ -3,11 +3,30 @@ import React from "react";
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
 
+      // Function will execute on click of button
+      const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch('DrinkCAVA.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'DrinkCAVA.pdf';
+                alink.click();
+            })
+        })
+    }
+
   return (
     <header class="text-white body-font">
       <div class="container mx-auto flex flex-wrap p-5 md:flex-row">
+     
         <a class="flex title-font font-medium text-white mb-4 md:mb-0 pr-4" href="/">
-          <span class="ml-3 text-3xl">NINE4</span>
+          <span class="ml-3 text-3xl"><img src="/images/logo.png" className="h-8 lg:h-10"></img></span>
+          
+         
         </a>
         <button
             className="text-white cursor-pointer text-xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none ml-auto pb-3"
@@ -39,12 +58,13 @@ export default function Header() {
           id="example-navbar-danger"
         >
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center font-semibold pl-7">
-          <a class="mr-6 hover:text-white" href="/">Home</a>
-          <a class="mr-6 hover:text-white" href="/contact">Contact</a>
-          <a class="mr-6 hover:text-white" href="/404">404</a>
+          <a class="mr-6 hover:text-white" href="/">Hjem</a>
+          <a class="mr-6 hover:text-white" href="/alumni">Alumni</a>
+          <a class="mr-6 hover:text-white" href="/vilkar">Vilkår</a>
         </nav>
-        <button class="px-4 py-2 mt-2 text-sm font-semibold text-white bg-blue-600 transition duration-500 ease-in-out transform bg-transparent rounded-lg dark:text-gray-300 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-          Download
+        <button class="px-4 py-2 mt-2 text-sm font-semibold text-white bg-blue-600 transition duration-500 ease-in-out transform bg-transparent rounded-lg dark:text-gray-300 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+        onClick={onButtonClick}>
+          Whitepaper
         </button>
         </div>
       </div>

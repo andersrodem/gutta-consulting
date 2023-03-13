@@ -6,26 +6,22 @@ export default function Main() {
     <section class="text-black body-font lg:pt-20">
       <div class="container px-5 pt-32 mx-auto lg:px-4 lg:py-4">
         <div class="flex flex-col w-full mb-2 text-left md:text-center ">
+          
           <h1 class="mb-2 text-6xl font-bold tracking-tighter text-white lg:text-8xl md:text-7xl">
-            <span>We are making </span>
+            <span>Gutta Consulting</span>
             <br class="hidden lg:block"></br>
-            Stunning websites
+            
           </h1>
+          <p className="text-3xl text-white pt-8 pb-5">GaaS - Guttastemning as a Service</p>
           <br></br>
-          <p class="mx-auto  text-xl font-normal leading-relaxed text-gray-600 dark:text-gray-300 lg:w-2/3">
-            nine4 is a free to use template website for websites made with{" "}
-            <a href="https://nextjs.org/" className="underline">
-              Next.js
-            </a>{" "}
-            and styled with Tailwind CSS
-          </p>
+          
         </div>
       </div>
       <div class="container flex flex-col items-center justify-center py-8 mx-auto rounded-lg md:p-1 p-3">
         <img
           class="object-cover object-center w-full mb-10 border-gray-200 dark:border-gray-900 g327 border rounded-lg shadow-md"
           alt="hero"
-          src="./images/placeholder.png"
+          src="./images/hero.jpg"
         ></img>
       </div>
       <section class="text-gray-600 body-font">
@@ -34,15 +30,16 @@ export default function Main() {
             <div class="flex flex-wrap -m-4 text-center">
               <div class="p-4 sm:w-1/3 w-1/2">
                 <h2 class="title-font font-medium sm:text-5xl text-3xl text-white">
-                  <CountUp end={940} redraw={true}>
+                  <CountUp end={9827} redraw={true}>
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span ref={countUpRef} />
                       </VisibilitySensor>
+                      
                     )}
                   </CountUp>
                 </h2>
-                <p class="leading-relaxed">Users</p>
+                <p class="leading-relaxed">Pils drukket</p>
               </div>
               <div class="p-4 sm:w-1/3 w-1/2">
                 <h2 class="title-font font-medium sm:text-5xl text-3xl text-white">
@@ -54,7 +51,7 @@ export default function Main() {
                     )}
                   </CountUp>
                 </h2>
-                <p class="leading-relaxed">Subscribes</p>
+                <p class="leading-relaxed">Konsulenttimer levert</p>
               </div>
               <div class="p-4 sm:w-1/3 w-1/2">
                 <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
@@ -66,7 +63,19 @@ export default function Main() {
                     )}
                   </CountUp>
                 </h2>
-                <p class="leading-relaxed">Downloads</p>
+                <p class="leading-relaxed">Unicorns created</p>
+              </div>
+              <div class="p-4 sm:w-1/3 w-1/2 sm:hidden">
+                <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">
+                  <CountUp end={2} redraw={true}>
+                    {({ countUpRef, start }) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
+                </h2>
+                <p class="leading-relaxed">Strategiseminar gjennomført</p>
               </div>
             </div>
           </div>
@@ -76,79 +85,68 @@ export default function Main() {
             <img
               alt="feature"
               class="object-cover object-center h-full w-full"
-              src="./images/placeholder.png"
+              src="./images/test.jpeg"
             ></img>
           </div>
-          <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+          <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center mx-auto">
             <div class="flex flex-col mb-10 lg:items-start items-center">
               <div class="flex-grow">
                 <h2 class="text-white text-2xl title-font font-medium mb-3">
-                  Free
+                  Non-brofit
                 </h2>
                 <p class="leading-relaxed text-lg">
-                  All of our templates are 100% free forever.
+                  No brother left behind. I gutta consulting er alle med, alltid.
                 </p>
               </div>
             </div>
             <div class="flex flex-col mb-10 lg:items-start items-center">
               <div class="flex-grow">
                 <h2 class="text-white text-2xl title-font font-medium mb-3">
-                  Responsive
+                  Vi er grønne
                 </h2>
                 <p class="leading-relaxed text-lg">
-                  All our templates come with full responsiveness straight out
-                  of the box.
+                  Hansa, Heineken, Carlsberg. Vi tenker og drikker grønt.
                 </p>
               </div>
             </div>
             <div class="flex flex-col mb-10 lg:items-start items-center">
               <div class="flex-grow">
                 <h2 class="text-white text-2xl title-font font-medium mb-3">
-                  SEO Friendly
+                  Vi koder alt i broCode
                 </h2>
                 <p class="leading-relaxed text-lg">
-                  Our templates have the best SEO practices ensuring you get to
-                  the top.
+                  Den nyeste teknologien til ditt prosjekt
                 </p>
               </div>
             </div>
             <div class="flex flex-col mb-10 lg:items-start items-center">
               <div class="flex-grow">
                 <h2 class="text-white text-2xl title-font font-medium mb-3">
-                  Fast
+                  B2B
                 </h2>
                 <p class="leading-relaxed text-lg">
-                  The fastest websites you can get.
+                  Vi leverer alle tjenester direkte fra broder til broder
                 </p>
               </div>
             </div>
-            <div class="flex flex-col mb-10 lg:items-start items-center">
-              <div class="flex-grow">
-                <h2 class="text-white text-2xl title-font font-medium mb-3">
-                  Google Analytics Supported
-                </h2>
-                <p class="leading-relaxed text-lg">
-                  All our templates come with full support for Google Analytics.
-                </p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
-      <section class="text-gray-600 body-font">
+      <section class="text-gray-600 body-font mx-auto">
         <div class="container px-5 mx-auto">
           <div class="text-center mb-20">
             <h2 class="sm:text-5xl font-medium title-font text-white mb-4">
-              Our Team
+              Guttene
             </h2>
             <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-              Here is our company
+             Her er alle og ingen sjef
             </p>
             <div class="flex mt-6 justify-center">
               <div class="w-16 h-1 rounded-full bg-white inline-flex"></div>
             </div>
             <div class="container px-5 py-16 mx-auto">
-              <div class="flex flex-wrap -m-4">
+              <div class="flex flex-wrap -m-4 mx-auto">
                 <div class="p-4 lg:w-1/4 md:w-1/2">
                   <div class="h-full flex flex-col items-center text-center">
                     <img
